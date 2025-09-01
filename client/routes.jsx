@@ -5,23 +5,28 @@ import About from "./about.jsx";
 import Teaching from "./teaching.jsx";
 import Connect from "./connect.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/teaching",
+      element: <Teaching />,
+    },
+    {
+      path: "/connect",
+      element: <Connect />,
+    },
+  ],
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/teaching",
-    element: <Teaching />,
-  },
-  {
-    path: "/connect",
-    element: <Connect />,
-  },
-]);
+    basename: "/studioLV",
+  }
+);
 
 export default router;

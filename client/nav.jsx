@@ -6,7 +6,7 @@ export default function Nav() {
     <nav id="nav-container">
       <div id="left">
         <NavLink to="/">
-          <img id="name" src="/MLV-name.png" alt="Michael Leyte-Vidal" />
+          <img id="name" src="./MLV-name.png" alt="Michael Leyte-Vidal" />
         </NavLink>
       </div>
       <div id="right">
