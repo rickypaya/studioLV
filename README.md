@@ -1,6 +1,9 @@
 Web Design Project #1
 Business: Actor & Voice Teacher
 
+Preview:
+visit https://rickypaya.github.io/studioLV/
+
 Components:
 - Nav
 - Footer
@@ -16,7 +19,7 @@ Integrations
 Setup
 - Git clone this repo
 - run `npm i` or `npm install`
-- To see preview, run `npm run dev`
+- To see live preview, run `npm run dev`
 
 For making changes:
 - ¡¡DO NOT PUSH TO MAIN BRANCH!!
