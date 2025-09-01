@@ -27,3 +27,8 @@ For making changes:
 - Make a pull request, merge, & delete branch remotely.
 - Checkout main branch `git checkout main`
 - Delete branch locally `git branch -D <branch-to-delete>
+
+Technical TODO:
+[] Troubleshoot File downloads
+[] Debug form signup email forwarding
+[] Image loading
