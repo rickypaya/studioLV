@@ -25,4 +25,6 @@ For making changes:
 - ¡¡DO NOT PUSH TO MAIN BRANCH!!
 - First, make a new branch locally using `git checkout -b <new-branch-name>`
 - Once changes are made, push the branch to the repo
-- Make a pull request
+- Make a pull request, merge, & delete branch remotely.
+- Checkout main branch `git checkout main`
+- Delete branch locally `git branch -D <branch-to-delete>
