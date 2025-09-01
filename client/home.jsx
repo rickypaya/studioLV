@@ -38,8 +38,8 @@ export default function Home() {
     <>
       <Nav />
       <div id="hero" className="content-container">
-        <img src="./16_9-Michael.png" alt="Headshot" id="headshot" />
-        <img id="hero-title" src="./MLV-name.svg" alt="Michael Leyte-Vidal" />
+        <img src="16_9-Michael.png" alt="Headshot" id="headshot" />
+        <img id="hero-title" src="MLV-name.svg" alt="Michael Leyte-Vidal" />
       </div>
       <div id="meet" className="content-container">
         <div id="meet-left">
@@ -54,14 +54,14 @@ export default function Home() {
         </div>
 
         <div id="meet-right">
-          <img src="./Meet.jpg" id="meet-pic" alt="" />
+          <img src="Meet.jpg" id="meet-pic" alt="" />
         </div>
       </div>
       <div id="performances" className="content-container">
         <h2>Projects & Performances</h2>
         <Slider {...options} className="slider">
           <div className="show-item">
-            <img src="./carousel/Visit.JPG" className="showItemImg" alt="" />
+            <img src="carousel/Visit.JPG" className="showItemImg" alt="" />
             <div className="bottom">
               <h6 className="time">Mayor Pete Dummermut</h6>
               <h5 className="title">The Visit</h5>
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="show-item">
             <img
-              src="./carousel/Belcanto_bootcamp.jpg"
+              src="carousel/Belcanto_bootcamp.jpg"
               className="showItemImg"
               alt=""
             />
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
           <div className="show-item">
-            <img src="./carousel/naked.jpg" className="showItemImg" alt="" />
+            <img src="carousel/naked.jpg" className="showItemImg" alt="" />
             <div className="bottom">
               <h6 className="time">Cabaret with Karetina McCrimmon</h6>
               <h5 className="title">Naked</h5>
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
 
           <div className="show-item">
-            <img src="./carousel/Capuleti.png" className="showItemImg" alt="" />
+            <img src="carousel/Capuleti.png" className="showItemImg" alt="" />
             <div className="bottom">
               <h6 className="time">Capellio</h6>
               <h5 className="title">I Capuleti e i Montecchi</h5>
@@ -102,7 +102,7 @@ export default function Home() {
 
           <div className="show-item">
             <img
-              src="./carousel/Magic_flute.png"
+              src="carousel/Magic_flute.png"
               className="showItemImg"
               alt=""
             />
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="show-item">
-            <img src="./carousel/Pirates.jpg" className="showItemImg" alt="" />
+            <img src="carousel/Pirates.jpg" className="showItemImg" alt="" />
             <div className="bottom">
               <h6 className="time">Sergent of Police</h6>
               <h5 className="title">Pirates of Penzance</h5>

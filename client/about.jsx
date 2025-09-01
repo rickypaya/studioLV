@@ -8,11 +8,11 @@ export default function About() {
       <Nav />
       <div id="about">
         <div id="first">
-          <img src="./bio/giovanni.jpg" alt="" />
+          <img src="bio/giovanni.jpg" alt="" />
           <h3>About Michael</h3>
         </div>
         <div id="second">
-          <img src="./bio/visit.JPG" alt="" />
+          <img src="bio/visit.JPG" alt="" />
           <p>
             <b>Michael Leyte-Vidal</b> is a Miami-born, Cuban-American performer
             and voice teacher based in Jersey City, NJ. With a Master of Music
