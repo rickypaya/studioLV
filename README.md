@@ -1,0 +1,25 @@
+Web Design Project #1
+Business: Actor & Voice Teacher
+
+Components:
+- Nav
+- Footer
+- Home
+- About
+- Teaching
+- Connect
+
+Integrations
+- Slick Carousel (home)
+- Web3Forms (teaching)
+
+Setup
+- Git clone this repo
+- run `npm i` or `npm install`
+- To see preview, run `npm run dev`
+
+For making changes:
+- ¡¡DO NOT PUSH TO MAIN BRANCH!!
+- First, make a new branch locally using `git checkout -b <new-branch-name>`
+- Once changes are made, push the branch to the repo
+- Make a pull request
