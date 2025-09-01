@@ -16,7 +16,8 @@ Integrations
 - Web3Forms (teaching)
 
 Setup
-- Git clone this repo
+- in terminal clone repo with `git clone https://github.com/rickypaya/studioLV.git`
+- Change directory into repo with `cd studioLV`
 - run `npm i` or `npm install`
 - To see live preview, run `npm run dev`
 
