@@ -28,7 +28,8 @@ For making changes:
 - Checkout main branch `git checkout main`
 - Delete branch locally `git branch -D <branch-to-delete>
 
-Technical TODO:
-[] Troubleshoot File downloads
-[] Debug form signup email forwarding
-[] Image loading
+TODO:
+- [ ] Design review
+- [ ] Troubleshoot File downloads
+- [ ] Debug form signup email forwarding
+- [ ] Image loading
