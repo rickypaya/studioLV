@@ -1,0 +1,149 @@
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  padding: 30px 0;
+  gap: 20px;
+  color: var(--white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#section1,
+#section3 {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section1 h6,
+#section3 h6 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+#section2 {
+  flex: 2 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+#logo:hover {
+  filter: brightness(1) invert(0) sepia(0) saturate(1) hue-rotate(10deg);
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+}
+
+.linkTo {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.linkTo:hover,
+.linkTo:focus {
+  color: var(--gold);
+  outline: none;
+}
+
+/* Section 3 Instagram link styles */
+#section3 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#section3 a:hover,
+#section3 a:focus {
+  color: var(--gold);
+  outline: none;
+}
+
+#section3 img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+#section3 a:hover img,
+#section3 a:focus img {
+  filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(45deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    padding: 30px 3vw;
+    gap: 15px;
+  }
+
+  #section1,
+  #section2,
+  #section3 {
+    flex: none;
+    width: 100%;
+  }
+
+  #section2 {
+    align-items: center;
+  }
+
+  .links {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo {
+    width: 120px;
+  }
+
+  .linkTo {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  #section3 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #section3 h6 {
+    font-size: 0.9rem;
+  }
+}

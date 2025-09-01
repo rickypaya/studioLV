@@ -1,0 +1,146 @@
+nav {
+  width: 100%;
+  max-height: 150px;
+  background: #355e3b;
+  background: linear-gradient(
+    135deg,
+    rgba(53, 94, 59, 1) 15%,
+    rgba(76, 217, 81, 1) 59%,
+    rgba(87, 90, 105, 1) 90%
+  );
+}
+
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Left side logo image */
+#left {
+  flex-shrink: 0;
+}
+
+#name {
+  max-height: 100px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#name:hover {
+  transform: scale(1.05);
+}
+
+/* Right side nav links container */
+#right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+/* Nav link base styles */
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Nav link <p> margin reset */
+.nav-link p {
+  margin: 0;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+/* Hover effect: underline with animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link style */
+.nav-link.active {
+  color: var(--gold);
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background-color: var(--gold);
+}
+
+/* Responsive styles */
+
+/* Tablet and below - stack links vertically */
+@media (max-width: 1023px) {
+  #nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: none;
+    padding: 10px 20px;
+  }
+
+  #left {
+    margin-bottom: 10px;
+  }
+
+  #right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile - stack links vertically */
+@media (max-width: 767px) {
+  #nav-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  #left {
+    margin-bottom: 15px;
+  }
+
+  #right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+}

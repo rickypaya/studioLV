@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+body {
+  min-width: 350px;
+}
+
+:root {
+  --green: #355e3b;
+  --gold: #ffbf00;
+  --white: #fcfcfc;
+  --pink: #ba908a;
+}
+
+img {
+  /* max-width: 500px; */
+}

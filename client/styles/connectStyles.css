@@ -1,0 +1,336 @@
+/* Resume & Headshots Section */
+#resume {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--white) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#resume h2 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+#downloadables {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  min-width: 200px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--green);
+}
+
+.card > img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover > img {
+  transform: scale(1.02);
+}
+
+.card > a {
+  margin: 0;
+  padding: 12px 32px;
+  border: 2px solid var(--green);
+  background: var(--white);
+  color: var(--green);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.card > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.card > a:hover::before {
+  left: 100%;
+}
+
+.card > a:hover {
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Connect Section */
+#connects {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    var(--green) 0%,
+    rgba(76, 175, 80, 0.9) 100%
+  );
+  padding: 4rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#connects::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+#connect-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#connect-left > img {
+  width: 300px;
+  border-radius: 50%;
+  border: 6px solid var(--white);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#connect-left > img:hover {
+  transform: scale(1.05);
+}
+
+#connect-right {
+  width: 60%;
+  color: var(--white);
+  z-index: 1;
+}
+
+#connect-right h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+#connect-right p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+#connect-right a {
+  display: inline-block;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--white);
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#connect-right a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+#connect-right a:hover::before {
+  left: 0;
+}
+
+#connect-right a:hover {
+  color: var(--green);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #downloadables {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .card {
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  #connects {
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  #connect-left > img {
+    width: 240px;
+  }
+
+  #connect-right h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #resume h2 {
+    font-size: 2rem;
+  }
+
+  #downloadables {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    min-width: 280px;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  #connects {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  #connect-left,
+  #connect-right {
+    width: 100%;
+  }
+
+  #connect-left > img {
+    width: 200px;
+  }
+
+  #connect-right h3 {
+    font-size: 1.8rem;
+  }
+
+  #connect-right p {
+    font-size: 1.1rem;
+  }
+
+  #connect-right a {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #resume {
+    padding: 2rem 1rem;
+  }
+
+  #resume h2 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    min-width: 260px;
+  }
+
+  .card > img {
+    height: 200px;
+  }
+
+  .card > a {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  #connects {
+    padding: 2rem 1.5rem;
+    margin: 3rem 0.5rem;
+  }
+
+  #connect-left > img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #connect-right h3 {
+    font-size: 1.6rem;
+  }
+
+  #connect-right p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,251 @@
+.content-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero {
+  height: auto;
+  background-color: var(--pink);
+}
+
+#headshot {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 200%;
+  height: 100%; */
+
+  display: block;
+  width: 100%;
+  max-height: 65vw;
+  object-position: center;
+  object-fit: cover;
+}
+
+#hero-title {
+  position: absolute;
+  height: 200px;
+  right: 200px;
+  top: 50%;
+}
+
+#meet {
+  background-color: var(--green);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white);
+  justify-content: center;
+}
+
+#meet > div {
+  margin: 5rem 00;
+}
+
+#meet-left {
+  width: 80%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+#meet-left p {
+  max-width: 50%;
+}
+
+#meet-right {
+  width: 50%;
+}
+
+#meet-pic {
+  width: 80%;
+  height: auto;
+}
+
+#meet p {
+  width: 70%;
+}
+
+.navBtn {
+  margin: 0;
+  padding: 12px 32px;
+  border: 2px solid var(--green);
+  background: var(--white);
+  color: var(--green);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.navBtn:hover::before {
+  left: 100%;
+}
+
+.navBtn:hover {
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#performances {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 3rem 0;
+}
+
+#performances h2 {
+  padding: 0 3rem;
+  text-align: center;
+}
+
+#btnToResume {
+  border-color: var(--green);
+  color: var(--green);
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#btnToResume:hover {
+  color: var(--white);
+}
+
+.slider {
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.showItemImg {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bottom {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bottom h6 {
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.bottom h5 {
+  text-align: center;
+}
+
+.bottom p {
+  text-align: center;
+}
+
+/* table styles*/
+@media (max-width: 1023px) {
+  #meet {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #meet-left {
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  #meet-right {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  #meet-pic {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .slider {
+    margin-bottom: none;
+  }
+
+  #btnToResume {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+}
+
+/*mobile styles*/
+@media (max-width: 767px) {
+  #headshot {
+    height: 100%;
+  }
+
+  #hero-title {
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+  }
+
+  #meet h2 {
+    margin-top: 3rem;
+  }
+
+  #meet-pic {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  #meet > div {
+    margin: 0;
+  }
+
+  #meet-right {
+    margin-bottom: 0;
+  }
+
+  #btnToResume {
+    border-color: var(--green);
+    color: var(--green);
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+}

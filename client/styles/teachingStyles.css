@@ -1,0 +1,457 @@
+#teaching {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--white) 0%,
+    rgba(var(--gold), 0.03) 100%
+  );
+}
+
+/* New wrapper for header and body with background */
+.main-content {
+  position: relative;
+  background-image: url("./teaching/theater.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0.95) 0%,
+    rgba(252, 252, 252, 0.55) 50%,
+    rgba(252, 252, 252, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.header img {
+  width: clamp(200px, 40vw, 400px);
+  height: auto;
+  margin-bottom: 2rem;
+  filter: brightness(1.1) contrast(1.1);
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.02);
+}
+
+.header h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--green);
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-gap: 4rem;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+
+.body p {
+  font-size: clamp(1.1rem, 1.3vw, 1.25rem);
+  line-height: 1.8;
+  color: #333;
+  font-weight: 400;
+  text-align: justify;
+  hyphens: auto;
+  width: 90%;
+  background: rgba(252, 252, 252, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+
+.body p br {
+  content: "";
+  margin: 2rem 0;
+  display: block;
+  border-bottom: 1px solid rgba(var(--gold), 0.2);
+}
+
+.body img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  position: sticky;
+  top: 2rem;
+}
+
+.body img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+  background: var(--green);
+  padding: 6rem 2rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.testimonials::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.testimonials h3 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials h3::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.quote {
+  background: rgba(var(--white), 0.95);
+  color: var(--green);
+  padding: 2.5rem 2rem;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  backdrop-filter: blur(10px);
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  font-size: 4rem;
+  color: var(--gold);
+  font-family: Georgia, serif;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.quote::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--pink));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.quote:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.quote:hover::after {
+  opacity: 1;
+}
+
+.quote p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  /* color: #444; */
+  color: var(--white);
+  font-weight: 400;
+}
+
+.quote h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-align: right;
+  margin: 0;
+  position: relative;
+}
+
+.quote h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-align: right;
+  margin: 0;
+  position: relative;
+}
+
+.quote h6::before {
+  content: "— ";
+  color: var(--green);
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 1023px) {
+  .main-content {
+    background-position: center center;
+  }
+
+  .header {
+    padding: 3rem 1.5rem 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    padding: 0 1.5rem;
+    /* margin-bottom: 4rem; */
+  }
+
+  .body p {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .body img {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    position: static;
+  }
+
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+
+  .quotes {
+    gap: 2rem;
+  }
+
+  .quote {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .main-content {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .main-content::before {
+    background: linear-gradient(
+      180deg,
+      rgba(252, 252, 252, 0.9) 0%,
+      rgba(252, 252, 252, 0.85) 50%,
+      rgba(252, 252, 252, 0.95) 100%
+    );
+  }
+
+  .header {
+    padding: 2rem 1rem 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .header::after {
+    height: 40px;
+    transform: skewY(-2deg);
+  }
+
+  .header img {
+    width: clamp(150px, 60vw, 300px);
+  }
+
+  .body {
+    padding: 0 1rem;
+    grid-gap: 2rem;
+  }
+
+  .body p {
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  .body p br {
+    margin: 1.5rem 0;
+  }
+
+  .testimonials {
+    padding: 3rem 1rem;
+  }
+
+  .testimonials::before {
+    height: 40px;
+    top: -40px;
+    transform: skewY(-2deg);
+  }
+
+  .testimonials h3 {
+    margin-bottom: 2.5rem;
+  }
+
+  .quotes {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .quote {
+    padding: 1.5rem 1rem;
+  }
+
+  .quote::before {
+    font-size: 3rem;
+    top: -5px;
+    left: 10px;
+  }
+
+  .quote p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .quote h6 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .main-content {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .header {
+    padding: 1.5rem 0.5rem 3rem;
+  }
+
+  .body {
+    padding: 0 0.5rem;
+  }
+
+  .body p {
+    padding: 1rem;
+  }
+
+  .testimonials {
+    padding: 2rem 0.5rem;
+  }
+
+  .quote {
+    padding: 1.25rem 0.75rem;
+  }
+}
+
+/* Portrait orientation adjustments */
+@media (orientation: portrait) and (max-width: 768px) {
+  .main-content {
+    background-position: center top;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (orientation: landscape) and (max-height: 500px) {
+  .main-content {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}
+
+/* High DPI/Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-content {
+    background-image: url("./teaching/theater.jpg");
+  }
+}
+
+/* Print styles for editorial feel */
+@media print {
+  .main-content {
+    background: none;
+  }
+
+  .header {
+    background: none;
+    color: #000;
+    border-bottom: 3px solid #000;
+  }
+
+  .testimonials {
+    background: none;
+    color: #000;
+    border-top: 1px solid #000;
+  }
+
+  .quote {
+    background: none;
+    border: 1px solid #ccc;
+  }
+}
