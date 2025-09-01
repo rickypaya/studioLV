@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer id="footer" role="contentinfo" aria-label="Site Footer">
       <div id="section1">
-        <h6 id="designedBy">Designed by Ricky Payares</h6>
+        <h6 id="designedBy">
+          Designed by <a href="https://payares-dev.com/">Fulcrum DGTL.</a>
+        </h6>
       </div>
       <div id="section2">
         <img src="./MLV-name.svg" alt="MLV logo" id="logo" />
