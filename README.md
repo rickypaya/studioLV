@@ -1,11 +1,10 @@
 Web Design Project #1
-Business: Actor & Voice Teacher
-
-Preview:
-visit https://rickypaya.github.io/studioLV/
+- Business: Actor & Voice Teacher
+- Github Pages Preview: https://rickypaya.github.io/studioLV/
 
 Components:
 - Nav
+- Routes
 - Footer
 - Home
 - About
