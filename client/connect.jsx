@@ -11,21 +11,21 @@ export default function Connect() {
           <h2>Resume & Headshots</h2>
           <div id="downloadables">
             <div className="card">
-              <img src="./headshots/Leyte-Vidal-Headshot1.jpg" alt="" />
-              <a download="./headshots/Leyte-Vidal-Headshot1.jpg">
+              <img src="headshots/Leyte-Vidal-Headshot1.jpg" alt="" />
+              <a download="headshots/Leyte-Vidal-Headshot1.jpg">
                 Download Headshot
               </a>
             </div>
 
             <div className="card">
-              <img src="./headshots/Leyte-Vidal-Headshot2.jpg" alt="" />
+              <img src="headshots/Leyte-Vidal-Headshot2.jpg" alt="" />
               <a download="./headshots/Leyte-Vidal-Headshot2.jpg">
                 Download Headshot
               </a>
             </div>
 
             <div className="card">
-              <img src="./headshots/leyte-vidal-resume.png" alt="" />
+              <img src="headshots/leyte-vidal-resume.png" alt="" />
               <a download="./headshots/leyte-vidal-resume.pdf">
                 Download Resume
               </a>
@@ -35,7 +35,7 @@ export default function Connect() {
 
         <div id="connects">
           <div id="connect-left">
-            <img src="./headshots/looking-up.jpg" alt="Michael Looking Up" />
+            <img src="headshots/looking-up.jpg" alt="Michael Looking Up" />
           </div>
           <div id="connect-right">
             <h3>Connect with Michael</h3>

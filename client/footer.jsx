@@ -10,7 +10,7 @@ export default function Footer() {
         </h6>
       </div>
       <div id="section2">
-        <img src="./MLV-name.svg" alt="MLV logo" id="logo" />
+        <img src="MLV-name.svg" alt="MLV logo" id="logo" />
         <nav id="footer-links" className="links" aria-label="Footer navigation">
           <Link to="/about" className="linkTo">
             About
@@ -30,7 +30,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           aria-label="Follow on Instagram"
         >
-          <img src="./ig-icon.png" alt="Instagram icon" />
+          <img src="ig-icon.png" alt="Instagram icon" />
           <h6>Follow</h6>
         </a>
       </div>

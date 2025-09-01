@@ -10,7 +10,7 @@ export default function Teaching() {
       <div id="teaching">
         <div className="main-content">
           <div className="header">
-            <img src="./teaching/studio-LV.png" alt="" />
+            <img src="teaching/studio-LV.png" alt="" />
             <h2>Lessons and Technical Training</h2>
           </div>
 
@@ -41,7 +41,7 @@ export default function Teaching() {
               share it with confidence.
             </p>
 
-            <img src="./teaching/stage2.png" alt="" />
+            <img src="teaching/stage2.png" alt="" />
           </div>
         </div>
 
